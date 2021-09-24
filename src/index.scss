@@ -1,0 +1,89 @@
+$primaryColor: #f1555c;
+$primaryLighter: #e9e9e7;
+$textColor: #05163d;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 2rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: $textColor;
+}
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+.nav__link {
+  color: $textColor;
+}
+.nav__logo {
+  width: 4rem;
+  height: 4rem;
+}
+.nav__link:hover {
+  color: $primaryColor;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.3);
+  perspective: 1000;
+}
+.card__title {
+  font-size: 1.8rem;
+}
+.card__img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 2rem;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.projects {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
